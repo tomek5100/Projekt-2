@@ -190,8 +190,6 @@ Kurier wybiera opcję "Historia zamówień".
 Kurier przegląda listę wszystkich zrealizowanych zamówień, z ich szczegółami i statusami.
 
 ## 7. Testowanie
-
-### 7.1 Plan testów
 - **Testy jednostkowe**: Testowanie pojedynczych funkcji i metod.
 - **Testy integracyjne**: Testowanie interakcji między różnymi komponentami.
 - **Testy systemowe**: Testowanie całego systemu pod kątem spełnienia wymagań.
