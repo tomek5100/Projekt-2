@@ -13,27 +13,26 @@ CREATE TABLE `dania` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 INSERT INTO `dania` (`id`, `nazwa`, `cena`) VALUES
-(1, 'Margharita', '22.00'),
-(2, 'Funghi', '22.00'),
-(3, 'Capriccioza', '22.00'),
-(4, 'Peperoni', '11.00'),
-(5, 'Ostra', '11.00'),
-(6, 'Hawajska', '11.00'),
-(7, 'Rosoł', '11.00'),
-(8, 'Kotlet', '22.00'),
-(9, 'Gulasz', '22.00'),
-(10, 'Kanapka ', '11.00'),
-(11, 'Zupa 1', '11.00'),
-(12, 'Zupa 2', '22.00'),
-(13, 'Zupa 3', '33.00'),
-(14, 'Zupa 4', '44.00'),
-(15, 'Zupa 5', '55.00'),
-(16, 'Zupa 6', '66.00'),
-(17, 'Zupa 7', '77.00'),
-(18, 'Zupa 8', '88.00'),
-(19, 'Zupa 9', '99.00'),
-(20, 'Zupa 10', '11.00');
-
+(1, 'Margherita', '22.00'),
+(2, 'Funghi', '24.00'),
+(3, 'Capricciosa', '26.00'),
+(4, 'Pepperoni', '28.00'),
+(5, 'Ostra', '30.00'),
+(6, 'Hawajska', '32.00'),
+(7, 'Rosół', '15.00'),
+(8, 'Kotlet schabowy', '25.00'),
+(9, 'Gulasz wołowy', '28.00'),
+(10, 'Kebab w picie', '20.00'),
+(11, 'Kebab na talerzu', '25.00'),
+(12, 'Falafel', '18.00'),
+(13, 'Shawarma', '22.00'),
+(14, 'Sałatka z kebabem', '19.00'),
+(15, 'Hummus z warzywami', '16.00'),
+(16, 'Zupa z soczewicy', '14.00'),
+(17, 'Pizza Quattro Formaggi', '30.00'),
+(18, 'Pizza Prosciutto', '28.00'),
+(19, 'Pizza Diavola', '29.00'),
+(20, 'Pizza Vegetariana', '27.00');
 
 CREATE TABLE `menu` (
   `id` int(11) NOT NULL,
@@ -41,29 +40,27 @@ CREATE TABLE `menu` (
   `id_danie` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
-
 INSERT INTO `menu` (`id`, `id_restauracja`, `id_danie`) VALUES
-(20, 1, 2),
-(18, 1, 7),
-(19, 1, 8),
-(21, 1, 20),
-(7, 2, 9),
-(8, 2, 10),
-(9, 2, 11),
-(10, 2, 12),
-(11, 2, 13),
-(12, 2, 14),
-(13, 2, 15),
-(14, 2, 16),
-(15, 2, 17),
-(16, 2, 18),
-(17, 2, 19),
-(1, 3, 1),
-(3, 3, 2),
-(2, 3, 3),
-(5, 3, 4),
-(6, 3, 5),
-(4, 3, 6);
+(1, 1, 7),
+(2, 1, 8),
+(3, 1, 9),
+(4, 1, 20),
+(5, 2, 10),
+(6, 2, 11),
+(7, 2, 12),
+(8, 2, 13),
+(9, 2, 14),
+(10, 2, 15),
+(11, 2, 16),
+(12, 3, 1),
+(13, 3, 2),
+(14, 3, 3),
+(15, 3, 4),
+(16, 3, 5),
+(17, 3, 6),
+(18, 3, 17),
+(19, 3, 18),
+(20, 3, 19);
 
 
 CREATE TABLE `restauracje` (
@@ -77,9 +74,9 @@ CREATE TABLE `restauracje` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 INSERT INTO `restauracje` (`id`, `nazwa`, `zdjęcie`, `opis`, `miasto`, `ulica`, `numer_lokalu`) VALUES
-(1, 'Restauracja', 'https://dla-gastronomii.pl/images/porady/kuchnia-restauracja.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu convallis augue. Phasellus pharetra sit amet, eleifend a quam. Pellentesque ultricies libero vitae lorem euismod fringilla. Vestibulum ut eleifend neque, tincidunt sodales elit. Interdum et malesuada fames ac ante ipsum primis in.', 'Kraków', 'Abfda', '123'),
-(2, 'Kebabownia', 'https://static.pyszne.pl/images/restaurants/pl/05N0QO11/logo_465x320.png', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu convallis augue. Phasellus pharetra sit amet, eleifend a quam. Pellentesque ultricies libero vitae lorem euismod fringilla. Vestibulum ut eleifend neque, tincidunt sodales elit. Interdum et malesuada fames ac ante ipsum primis in.', 'Kraków', 'gdfgf', '321'),
-(3, 'Pizzeria', 'https://www.piramida-steakhouse.pl/wp-content/uploads/2022/06/ab92d16f-22da-4421-aedf-bcc0b5423954.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu convallis augue. Phasellus pharetra sit amet, eleifend a quam. Pellentesque ultricies libero vitae lorem euismod fringilla. Vestibulum ut eleifend neque, tincidunt sodales elit. Interdum et malesuada fames ac ante ipsum primis in.', "Kraków", "dfsdfd", '222');
+(1, 'Restauracja', 'https://dla-gastronomii.pl/images/porady/kuchnia-restauracja.jpg', 'Restauracja serwująca wykwintne dania kuchni polskiej z nutą nowoczesności. Każde danie przygotowywane jest z najwyższej jakości składników, a wnętrze lokalu zachwyca elegancją i przytulnością.', 'Kraków', 'ul. Smocza', '1A'),
+(2, 'Kebabownia', 'https://static.pyszne.pl/images/restaurants/pl/05N0QO11/logo_465x320.png', 'Najlepszy kebab w mieście! Świeże, aromatyczne mięso oraz chrupiące warzywa podawane w pysznej picie lub na talerzu. Idealne miejsce na szybki i smaczny posiłek.', 'Kraków', 'ul. Sławkowska', '21B'),
+(3, 'Pizzeria', 'https://www.piramida-steakhouse.pl/wp-content/uploads/2022/06/ab92d16f-22da-4421-aedf-bcc0b5423954.jpg', 'Pizzeria, w której każdy znajdzie coś dla siebie. Od klasycznej Margherity po wyszukane kompozycje smakowe. Wszystkie pizze przygotowywane są na cienkim, chrupiącym cieście z najwyższej jakości składników.', 'Kraków', 'ul. Świętej Anny', '7C');
 
 
 CREATE TABLE `użytkownicy` (
