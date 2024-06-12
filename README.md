@@ -53,18 +53,36 @@ Klienci mogą przeglądać dostępne restauracje, wybierać dania z menu, skład
 ## 3. Wireframes
 Wireframes przedstawiają wygląd aplikacji i interakcje użytkownika z systemem. 
 
+### 3.1 Strona główna (lista restauracji)
 ![lista restauracji](https://github.com/tomek5100/Projekt-2/assets/87906580/cb104c18-17c7-4ba8-978f-0b37720d316b)
 
+### 3.2 Strona restauracji
 ![strona restauracji](https://github.com/tomek5100/Projekt-2/assets/87906580/3068ac5d-df40-43dc-81a2-b318dcca0e29)
 
+### 3.3 Status złożonego zamówienia
 ![status złożonego zamówienia](https://github.com/tomek5100/Projekt-2/assets/87906580/d111911a-0bc0-4075-a899-f9214bef5dc4)
 
+### 3.4 Strona logowania kuriera
 ![logowanie kuriera](https://github.com/tomek5100/Projekt-2/assets/87906580/06fd226e-f769-4975-84cd-fb7d95e18fb4)
 
+### 3.4 Strona serwisu kurierskiego
 ![serwis kurierski](https://github.com/tomek5100/Projekt-2/assets/87906580/a8755f2f-2dda-4af8-8398-0aa740e8fdff)
 
 ## 4. Diagramy UML (klas)
 Przedstawiają strukturę klas i ich zależności.
+
+### 4.1 Frontend
+Komponenty nie mają bezpośrednich relacji między sobą poza nawigacją użytkownika. Każdy z komponentów jest odpowiedzialny za różne aspekty aplikacji
+
+![frontend](https://github.com/tomek5100/Projekt-2/assets/87906580/49af7c00-263c-4d2d-b0db-ea5e0084b633)
+
+### 4.2 Backend
+**Relacje:**
+Restauracje i Dania mają relację wiele-do-wielu przez Menu.
+Użytkownicy mają relację jeden-do-wielu z Zamówienia.
+Zamówienia mają relację wiele-do-wielu z Dania przez Zamówienie_Danie.
+
+![backend](https://github.com/tomek5100/Projekt-2/assets/87906580/074df737-7322-4072-a765-73f3f1865eb8)
 
 ## 5. Szczegóły implementacji
 
