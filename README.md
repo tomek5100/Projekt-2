@@ -53,6 +53,15 @@ Klienci mogą przeglądać dostępne restauracje, wybierać dania z menu, skład
 ## 3. Wireframes
 Wireframes przedstawiają wygląd aplikacji i interakcje użytkownika z systemem. 
 
+![lista restauracji](https://github.com/tomek5100/Projekt-2/assets/87906580/cb104c18-17c7-4ba8-978f-0b37720d316b)
+
+![strona restauracji](https://github.com/tomek5100/Projekt-2/assets/87906580/3068ac5d-df40-43dc-81a2-b318dcca0e29)
+
+![status złożonego zamówienia](https://github.com/tomek5100/Projekt-2/assets/87906580/d111911a-0bc0-4075-a899-f9214bef5dc4)
+
+![logowanie kuriera](https://github.com/tomek5100/Projekt-2/assets/87906580/06fd226e-f769-4975-84cd-fb7d95e18fb4)
+
+![serwis kurierski](https://github.com/tomek5100/Projekt-2/assets/87906580/a8755f2f-2dda-4af8-8398-0aa740e8fdff)
 
 ## 4. Diagramy UML (klas)
 Przedstawiają strukturę klas i ich zależności.
@@ -147,9 +156,8 @@ W bazie danych utworzone są domyślnie 4 konta kurierów:
 - Użytkownik: `karol@slimak.pl`, Hasło: `test123`
 - Użytkownik: `ola@bozek.pl`, Hasło: `bmwe46`
 
-## 6. Przykłady użycia
+## 6. Scenariusze użycia
 
-### 6.1 Scenariusze użycia
 #### Przykład 1: Przeglądanie restauracji
 1. Użytkownik otwiera aplikację.
 2. Użytkownik przegląda listę dostępnych restauracji.
